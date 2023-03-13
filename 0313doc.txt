@@ -1,2 +1,40 @@
-line one 
-line two
+https://104.es
+python109-1
+django109-1
+
+python的原始碼的附檔名 .py
+
+python test.py
+
+colab  (Google的Jupyter notebook執行環境)
+Jupyter notebook是Python的網頁執行環境
+Jupyter notebook的附檔名 .ipynb
+Anaconda Python
+
+假設我們把codes.zip解壓縮到C:\資料夾下
+
+cd \
+cd codes
+jupyter notebook
+
+在瀏覽器開啟 ch04.ipynb
+
+本節課示範程式碼的網址：
+https://github.com/skynettw/python111-2-78
+
+cd \
+git clone https://github.com/skynettw/python111-2-78.zip
+cd python111-2-78
+code . 
+
+
+(base) C:\...  (base)指的是Anaconda的基礎虛擬環境
+
+
+read      => 讀成一個字串             => 字串 (讀全部)
+readlines => 讀成一個以列為區分的串列  => 串列 (讀全部)
+readline  => 只讀取一列，成為字串      => 字串 (只讀一列)
+
+
+
+
