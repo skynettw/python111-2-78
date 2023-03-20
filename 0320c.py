@@ -7,7 +7,7 @@ heights = list()
 weights = list()
 for item in rawdata:
     name, height, weight = item.split(",")
-    names.append(names)
+    names.append(name)
     heights.append(height)
     weights.append(weight)
 print(names)
