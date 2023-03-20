@@ -1,0 +1,15 @@
+f = open("bodyinfo.csv", "r", encoding="utf-8")
+rawdata = f.readlines()
+f.close()
+
+names = list()
+heights = list()
+weights = list()
+for item in rawdata:
+    name, height, weight = item.split(",")
+    names.append(names)
+    heights.append(height)
+    weights.append(weight)
+print(names)
+print(heights)
+print(weights)
