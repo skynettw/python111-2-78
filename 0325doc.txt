@@ -1,0 +1,16 @@
+新建Django網站：
+1.建立虛擬環境 (nkust1112web78) conda create --name nkust1112web78 python=3.10
+2.啟用虛擬環境 conda activate nkust1112web78
+3.安裝django => pip install django 
+4.django-admin startproject nkust1112web78
+5.cd nkust1112web78
+6.python manage.py startapp mysite
+
+開始新的網站：
+
+python manage.py makemigrations   <= 建立資料庫的遷移表
+python manage.py migrate          <= 更新資料庫的資料表設定
+python manage.py createsuperuser  <= 建立後台的管理員帳號及密碼 (admin/12345678)
+  ~~ Linux的作業系統下，輸入密碼時，游標是不會動的 ~~
+python manage.py runserver        <= 啟動測試網站 (localhost:8000)
+  按 Ctrl + C 可以中斷測試網站的執行
