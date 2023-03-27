@@ -20,3 +20,6 @@ def all_data(request):
         msg = msg + "<tr bgcolor=#33ff33><td>{}</td><td>{}/{}</td></tr>".format(item['sna'].split("_")[1], item['sbi'], item['tot'])
     msg = msg + "</table>"
     return HttpResponse(msg)
+
+def filtered_data(request):
+    return render(request, "filter.html", locals())
