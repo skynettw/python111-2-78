@@ -4,7 +4,7 @@ import requests   # 匯入擷取網頁所需要的模組
 import json       # 匯入操作JSON格式所需要的模組
 
 def index(request):
-    myname = "高科金城武"
+    myname = "高雄金城武"
     return render(request, "index.html", locals())
 
 def all_data(request):
