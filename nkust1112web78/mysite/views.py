@@ -14,8 +14,12 @@ def nkustnews(request):
     data = models.NKUSTnews.objects.all()
     return render(request, "nkustnews.html", locals())
 
-def phonelist(request):
-    data = models.PhoneModel.objects.all()
+def phonelist(request, id=-1):
+    if id == -1:
+        data = models.PhoneModel.objects.all()              #找出所有的手機
+    else:
+        maker = models.PhoneMaker.objects.get(id=id)        #找出一個(get)指定的廠牌
+        data = models.PhoneModel.objects.filter(maker=maker) #找出一堆(filter)符合的資料
     return render(request, "phonelist.html", locals())
 
 def all_data(request):
@@ -51,3 +55,7 @@ def filtered_data(request):
     # 過濾 HBicycleData 裡面的所有記錄，找出其中sbi>=10的站台放到data中
     data = models.HBicycleData.objects.filter(sbi__gte=10)
     return render(request, "filter.html", locals())
+
+def chart(request):
+    data = models.PhoneModel.objects.all()
+    return render(request, "chart.html", locals())
